@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @page {
+    size: 50cm 30cm;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .instructions {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    background: #fffbe6;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .instructions h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #b8860b;
+  }
+  
+  .instructions ul {
+    margin-left: 18px;
+  }
+  
+  .instructions li {
+    margin-bottom: 4px;
+  }
+  
+  .board {
+    width: 50cm;
+    height: 30cm;
+    background: #e8dcc8;
+    border: 3px solid #5c4033;
+    position: relative;
+    margin: 0 auto;
+    page-break-after: always;
+    box-shadow: 0 0 0 1px #5c4033;
+    overflow: hidden;
+  }
+  
+  .title-area {
+    position: absolute;
+    top: 0.3cm;
+    left: 1cm;
+    right: 1cm;
+    height: 1.6cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main-title {
+    font-size: 28pt;
+    font-weight: bold;
+    color: #3e2723;
+    letter-spacing: 2px;
+  }
+  
+  .legend-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+    max-width: 24cm;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 7pt;
+    font-weight: bold;
+    color: #222;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  .legend-color {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+  }
+  
+  .grid-container {
+    position: absolute;
+    top: 2.4cm;
+    left: 1cm;
+    width: 48cm;
+    height: 18cm;
+  }
+  
+  .cell {
+    position: absolute;
+    width: 3cm;
+    height: 3cm;
+    background: #fff;
+    border: 1.5px solid #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .strip {
+    width: 100%;
+    height: 0.75cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px dashed #333;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .strip:last-child {
+    border-bottom: none;
+  }
+  
+  .coord-tag {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    font-size: 5pt;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    opacity: 0.9;
+    font-weight: normal;
+  }
+  
+  .chapters {
+    font-size: 10pt;
+  }
+  
+  .verses {
+    font-size: 9pt;
+  }
+  
+  .abbr {
+    font-size: 22pt;
+    letter-spacing: 1px;
+  }
+  
+  .name {
+    font-size: 7pt;
+    text-align: center;
+    padding: 0 1px;
+  }
+  
+  /* Colores según categorías */
+  .c-pentateuco .strip {
+    background: #7b1fa2;
+  }
+  
+  .c-historico .strip {
+    background: #0d47a1;
+  }
+  
+  .c-poetico .strip {
+    background: #1565c0;
+  }
+  
+  .c-prof-mayor .strip {
+    background: #2e7d32;
+  }
+  
+  .c-prof-menor .strip {
+    background: #43a047;
+  }
+  
+  .c-evangelio .strip {
+    background: #76ff03;
+    color: #1a1a1a;
+    text-shadow: none;
+  }
+  
+  .c-evangelio .coord-tag {
+    color: #1a1a1a;
+    text-shadow: none;
+  }
+  
+  .c-hechos .strip {
+    background: #2962ff;
+  }
+  
+  .c-paulina .strip {
+    background: #e65100;
+  }
+  
+  .c-general .strip {
+    background: #c62828;
+  }
+  
+  .c-profecia .strip {
+    background: #b71c1c;
+  }
+  
+  .empty-cell {
+    background: transparent;
+    border: 1px dashed rgba(92, 64, 51, 0.15);
+  }
+  
+  .empty-cell .strip {
+    background: transparent;
+    border-bottom: 1px dashed rgba(92, 64, 51, 0.15);
+  }
+  
+  /* Grid lines for assembly guide */
+  .grid-lines {
+    position: absolute;
+    top: 2.4cm;
+    left: 1cm;
+    width: 48cm;
+    height: 18cm;
+    pointer-events: none;
+  }
+  
+  .col-label,
+  .row-label {
+    position: absolute;
+    font-size: 7pt;
+    color: #5c4033;
+    font-weight: bold;
+  }
+  
+  .col-label {
+    bottom: -0.6cm;
+    width: 3cm;
+    text-align: center;
+  }
+  
+  .row-label {
+    left: -0.6cm;
+    height: 3cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.5cm;
+  }
+  
+  /* INFO PANEL INFERIOR - Nueva sección para 39 y 27 libros */
+  .info-panel {
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7.5cm;  /* Reducido de 10.5cm a 7.5cm */
+  background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 40%, #2d1b4e 70%, #1a0a2e 100%);
+  display: flex;
+  align-items: stretch;
+  }
+  
+  .canon-box {
+    background: rgba(62, 39, 35, 0.9);
+    border-radius: 6px;
+    padding: 4px 10px;
+    text-align: center;
+    color: #ffd700;
+    font-weight: bold;
+    min-width: 100px;
+  }
+  
+  .canon-number {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #ffd700;
+    line-height: 1;
+  }
+  
+  .canon-label {
+    font-size: 8pt;
+    letter-spacing: 1px;
+  }
+  
+  .canon-desc {
+    font-size: 6pt;
+    color: #e8dcc8;
+    margin-top: 2px;
+  }
+  
+  .stats-box {
+    background: rgba(62, 39, 35, 0.85);
+    border-radius: 6px;
+    padding: 3px 12px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  .stat-label {
+    font-size: 6pt;
+    color: #e8dcc8;
+  }
+  
+  .assembly-note {
+    position: absolute;
+    bottom: -0.8cm;
+    left: 0;
+    right: 0;
+    font-size: 6pt;
+    color: #5c4033;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Print specific */
+  @media print {
+    body {
+      background: none;
+      padding: 0;
+    }
+  
+    .instructions {
+      display: none;
+    }
+  
+    .board {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+
+  /* Elemento tipo tabla periódica de ejemplo */
+.sample-element {
+    width: 3.5cm;
+    min-width: 4.5cm;
+    display: flex;
+    flex-direction: column;
+    background: #c0c0c0;
+    border: 2px solid #ff0000;
+    margin: 0.3cm;
+    padding: 0.15cm;
+    justify-content: space-between;
+  }
+  
+  .sample-top {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+  }
+  
+  .sample-mid {
+    font-size: 28pt;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .sample-bot {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }

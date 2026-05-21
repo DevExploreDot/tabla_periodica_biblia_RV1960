@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tablero Bíblico - Tabla Periódica de la Biblia (50cm x 30cm)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="instructions">
+    <h2>📐 Instrucciones de Corte y Ensamblaje</h2>
+    <ul>
+      <li><strong>Tablero base:</strong> 50 cm × 30 cm en madera (fondo).</li>
+      <li><strong>Cada cuadro:</strong> 3 cm × 3 cm. Se corta en <strong>4 tiras horizontales</strong> de 0.75 cm de
+        alto cada una.</li>
+      <li><strong>Las líneas punteadas (dashed)</strong> dentro de cada cuadro indican dónde cortar.</li>
+      <li><strong>Coordenadas:</strong> En cada tira verás una etiqueta pequeña (ej: A1, B3). Esa es la posición exacta
+        donde va esa pieza en el tablero.</li>
+      <li><strong>4 datos por cuadro:</strong> Capítulos (arriba) → Versículos → Abreviatura → Nombre del libro (abajo).
+      </li>
+      <li>Al imprimir, selecciona <strong>"Tamaño real / 100%"</strong> y desactiva "Ajustar a página" para mantener las
+        medidas exactas.</li>
+    </ul>
+  </div>
+
+  <!-- TABLERO PRINCIPAL 50cm x 30cm -->
+  <div class="board">
+
+    <div class="title-area">
+      <div class="main-title">LA BIBLIA</div>
+      <div class="legend-area">
+        <div class="legend-item"><span class="legend-color" style="background:#7b1fa2"></span>PENTATEUCO</div>
+        <div class="legend-item"><span class="legend-color" style="background:#0d47a1"></span>HISTÓRICOS</div>
+        <div class="legend-item"><span class="legend-color" style="background:#1565c0"></span>POÉTICOS</div>
+        <div class="legend-item"><span class="legend-color" style="background:#2e7d32"></span>PROF. MAYORES</div>
+        <div class="legend-item"><span class="legend-color" style="background:#43a047"></span>PROF. MENORES</div>
+        <div class="legend-item"><span class="legend-color" style="background:#76ff03"></span>EVANGELIOS</div>
+        <div class="legend-item"><span class="legend-color" style="background:#2962ff"></span>HECHOS</div>
+        <div class="legend-item"><span class="legend-color" style="background:#e65100"></span>CARTAS PAULINAS</div>
+        <div class="legend-item"><span class="legend-color" style="background:#c62828"></span>CARTAS GENERALES</div>
+        <div class="legend-item"><span class="legend-color" style="background:#b71c1c"></span>PROFECÍAS</div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <!-- Fila 1 -->
+      <div class="cell c-pentateuco" style="left:0cm;top:0cm">
+        <div class="strip chapters">50<span class="coord-tag">A1</span></div>
+        <div class="strip verses">1533<span class="coord-tag">A1</span></div>
+        <div class="strip abbr">Gn<span class="coord-tag">A1</span></div>
+        <div class="strip name">GÉNESIS<span class="coord-tag">A1</span></div>
+      </div>
+      <div class="cell c-pentateuco" style="left:3cm;top:0cm">
+        <div class="strip chapters">40<span class="coord-tag">B1</span></div>
+        <div class="strip verses">1213<span class="coord-tag">B1</span></div>
+        <div class="strip abbr">Ex<span class="coord-tag">B1</span></div>
+        <div class="strip name">ÉXODO<span class="coord-tag">B1</span></div>
+      </div>
+      <div class="cell c-pentateuco" style="left:6cm;top:0cm">
+        <div class="strip chapters">27<span class="coord-tag">C1</span></div>
+        <div class="strip verses">859<span class="coord-tag">C1</span></div>
+        <div class="strip abbr">Lv<span class="coord-tag">C1</span></div>
+        <div class="strip name">LEVÍTICO<span class="coord-tag">C1</span></div>
+      </div>
+      <div class="cell c-pentateuco" style="left:9cm;top:0cm">
+        <div class="strip chapters">36<span class="coord-tag">D1</span></div>
+        <div class="strip verses">1288<span class="coord-tag">D1</span></div>
+        <div class="strip abbr">Nm<span class="coord-tag">D1</span></div>
+        <div class="strip name">NÚMEROS<span class="coord-tag">D1</span></div>
+      </div>
+      <div class="cell c-pentateuco" style="left:12cm;top:0cm">
+        <div class="strip chapters">34<span class="coord-tag">E1</span></div>
+        <div class="strip verses">959<span class="coord-tag">E1</span></div>
+        <div class="strip abbr">Dt<span class="coord-tag">E1</span></div>
+        <div class="strip name">DEUTERONOMIO<span class="coord-tag">E1</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:15cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:18cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:21cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:24cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:27cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-evangelio" style="left:30cm;top:0cm">
+        <div class="strip chapters">28<span class="coord-tag">K1</span></div>
+        <div class="strip verses">1071<span class="coord-tag">K1</span></div>
+        <div class="strip abbr">Mt<span class="coord-tag">K1</span></div>
+        <div class="strip name">MATEO<span class="coord-tag">K1</span></div>
+      </div>
+      <div class="cell c-evangelio" style="left:33cm;top:0cm">
+        <div class="strip chapters">16<span class="coord-tag">L1</span></div>
+        <div class="strip verses">678<span class="coord-tag">L1</span></div>
+        <div class="strip abbr">Mr<span class="coord-tag">L1</span></div>
+        <div class="strip name">MARCOS<span class="coord-tag">L1</span></div>
+      </div>
+      <div class="cell c-evangelio" style="left:36cm;top:0cm">
+        <div class="strip chapters">24<span class="coord-tag">M1</span></div>
+        <div class="strip verses">1151<span class="coord-tag">M1</span></div>
+        <div class="strip abbr">Lc<span class="coord-tag">M1</span></div>
+        <div class="strip name">LUCAS<span class="coord-tag">M1</span></div>
+      </div>
+      <div class="cell c-evangelio" style="left:39cm;top:0cm">
+        <div class="strip chapters">21<span class="coord-tag">N1</span></div>
+        <div class="strip verses">879<span class="coord-tag">N1</span></div>
+        <div class="strip abbr">Jn<span class="coord-tag">N1</span></div>
+        <div class="strip name">JUAN<span class="coord-tag">N1</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:42cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:45cm;top:0cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="cell c-historico" style="left:0cm;top:3cm">
+        <div class="strip chapters">24<span class="coord-tag">A2</span></div>
+        <div class="strip verses">658<span class="coord-tag">A2</span></div>
+        <div class="strip abbr">Jos<span class="coord-tag">A2</span></div>
+        <div class="strip name">JOSUÉ<span class="coord-tag">A2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:3cm;top:3cm">
+        <div class="strip chapters">21<span class="coord-tag">B2</span></div>
+        <div class="strip verses">619<span class="coord-tag">B2</span></div>
+        <div class="strip abbr">Jue<span class="coord-tag">B2</span></div>
+        <div class="strip name">JUECES<span class="coord-tag">B2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:6cm;top:3cm">
+        <div class="strip chapters">04<span class="coord-tag">C2</span></div>
+        <div class="strip verses">085<span class="coord-tag">C2</span></div>
+        <div class="strip abbr">Rt<span class="coord-tag">C2</span></div>
+        <div class="strip name">RUT<span class="coord-tag">C2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:9cm;top:3cm">
+        <div class="strip chapters">31<span class="coord-tag">D2</span></div>
+        <div class="strip verses">811<span class="coord-tag">D2</span></div>
+        <div class="strip abbr">1S<span class="coord-tag">D2</span></div>
+        <div class="strip name">1 SAMUEL<span class="coord-tag">D2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:12cm;top:3cm">
+        <div class="strip chapters">24<span class="coord-tag">E2</span></div>
+        <div class="strip verses">695<span class="coord-tag">E2</span></div>
+        <div class="strip abbr">2S<span class="coord-tag">E2</span></div>
+        <div class="strip name">2 SAMUEL<span class="coord-tag">E2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:15cm;top:3cm">
+        <div class="strip chapters">22<span class="coord-tag">F2</span></div>
+        <div class="strip verses">817<span class="coord-tag">F2</span></div>
+        <div class="strip abbr">1R<span class="coord-tag">F2</span></div>
+        <div class="strip name">1 REYES<span class="coord-tag">F2</span></div>
+      </div>
+      <div class="cell c-historico" style="left:18cm;top:3cm">
+        <div class="strip chapters">25<span class="coord-tag">G2</span></div>
+        <div class="strip verses">719<span class="coord-tag">G2</span></div>
+        <div class="strip abbr">2R<span class="coord-tag">G2</span></div>
+        <div class="strip name">2 REYES<span class="coord-tag">G2</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:21cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:24cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:27cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:30cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:33cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:36cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:39cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:42cm;top:3cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-hechos" style="left:45cm;top:3cm">
+        <div class="strip chapters">28<span class="coord-tag">P2</span></div>
+        <div class="strip verses">1007<span class="coord-tag">P2</span></div>
+        <div class="strip abbr">Hch<span class="coord-tag">P2</span></div>
+        <div class="strip name">HECHOS<span class="coord-tag">P2</span></div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="cell c-historico" style="left:0cm;top:6cm">
+        <div class="strip chapters">29<span class="coord-tag">A3</span></div>
+        <div class="strip verses">942<span class="coord-tag">A3</span></div>
+        <div class="strip abbr">1Cr<span class="coord-tag">A3</span></div>
+        <div class="strip name">1 CRÓNICAS<span class="coord-tag">A3</span></div>
+      </div>
+      <div class="cell c-historico" style="left:3cm;top:6cm">
+        <div class="strip chapters">36<span class="coord-tag">B3</span></div>
+        <div class="strip verses">822<span class="coord-tag">B3</span></div>
+        <div class="strip abbr">2Cr<span class="coord-tag">B3</span></div>
+        <div class="strip name">2 CRÓNICAS<span class="coord-tag">B3</span></div>
+      </div>
+      <div class="cell c-historico" style="left:6cm;top:6cm">
+        <div class="strip chapters">10<span class="coord-tag">C3</span></div>
+        <div class="strip verses">280<span class="coord-tag">C3</span></div>
+        <div class="strip abbr">Esd<span class="coord-tag">C3</span></div>
+        <div class="strip name">ESDRAS<span class="coord-tag">C3</span></div>
+      </div>
+      <div class="cell c-historico" style="left:9cm;top:6cm">
+        <div class="strip chapters">13<span class="coord-tag">D3</span></div>
+        <div class="strip verses">406<span class="coord-tag">D3</span></div>
+        <div class="strip abbr">Neh<span class="coord-tag">D3</span></div>
+        <div class="strip name">NEHEMÍAS<span class="coord-tag">D3</span></div>
+      </div>
+      <div class="cell c-historico" style="left:12cm;top:6cm">
+        <div class="strip chapters">10<span class="coord-tag">E3</span></div>
+        <div class="strip verses">167<span class="coord-tag">E3</span></div>
+        <div class="strip abbr">Est<span class="coord-tag">E3</span></div>
+        <div class="strip name">ESTER<span class="coord-tag">E3</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:15cm;top:6cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:18cm;top:6cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:21cm;top:6cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-paulina" style="left:24cm;top:6cm">
+        <div class="strip chapters">16<span class="coord-tag">I3</span></div>
+        <div class="strip verses">433<span class="coord-tag">I3</span></div>
+        <div class="strip abbr">Ro<span class="coord-tag">I3</span></div>
+        <div class="strip name">ROMANOS<span class="coord-tag">I3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:27cm;top:6cm">
+        <div class="strip chapters">16<span class="coord-tag">J3</span></div>
+        <div class="strip verses">437<span class="coord-tag">J3</span></div>
+        <div class="strip abbr">1Co<span class="coord-tag">J3</span></div>
+        <div class="strip name">1 CORINTIOS<span class="coord-tag">J3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:30cm;top:6cm">
+        <div class="strip chapters">13<span class="coord-tag">K3</span></div>
+        <div class="strip verses">256<span class="coord-tag">K3</span></div>
+        <div class="strip abbr">2Co<span class="coord-tag">K3</span></div>
+        <div class="strip name">2 CORINTIOS<span class="coord-tag">K3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:33cm;top:6cm">
+        <div class="strip chapters">06<span class="coord-tag">L3</span></div>
+        <div class="strip verses">149<span class="coord-tag">L3</span></div>
+        <div class="strip abbr">Ga<span class="coord-tag">L3</span></div>
+        <div class="strip name">GÁLATAS<span class="coord-tag">L3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:36cm;top:6cm">
+        <div class="strip chapters">06<span class="coord-tag">M3</span></div>
+        <div class="strip verses">155<span class="coord-tag">M3</span></div>
+        <div class="strip abbr">Ef<span class="coord-tag">M3</span></div>
+        <div class="strip name">EFESIOS<span class="coord-tag">M3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:39cm;top:6cm">
+        <div class="strip chapters">04<span class="coord-tag">N3</span></div>
+        <div class="strip verses">104<span class="coord-tag">N3</span></div>
+        <div class="strip abbr">Fil<span class="coord-tag">N3</span></div>
+        <div class="strip name">FILIPENSES<span class="coord-tag">N3</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:42cm;top:6cm">
+        <div class="strip chapters">04<span class="coord-tag">O3</span></div>
+        <div class="strip verses">095<span class="coord-tag">O3</span></div>
+        <div class="strip abbr">Col<span class="coord-tag">O3</span></div>
+        <div class="strip name">COLOSENSES<span class="coord-tag">O3</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:45cm;top:6cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+
+      <!-- Fila 4 -->
+      <div class="cell c-poetico" style="left:0cm;top:9cm">
+        <div class="strip chapters">42<span class="coord-tag">A4</span></div>
+        <div class="strip verses">1070<span class="coord-tag">A4</span></div>
+        <div class="strip abbr">Job<span class="coord-tag">A4</span></div>
+        <div class="strip name">JOB<span class="coord-tag">A4</span></div>
+      </div>
+      <div class="cell c-poetico" style="left:3cm;top:9cm">
+        <div class="strip chapters">150<span class="coord-tag">B4</span></div>
+        <div class="strip verses">2461<span class="coord-tag">B4</span></div>
+        <div class="strip abbr">Sal<span class="coord-tag">B4</span></div>
+        <div class="strip name">SALMOS<span class="coord-tag">B4</span></div>
+      </div>
+      <div class="cell c-poetico" style="left:6cm;top:9cm">
+        <div class="strip chapters">31<span class="coord-tag">C4</span></div>
+        <div class="strip verses">915<span class="coord-tag">C4</span></div>
+        <div class="strip abbr">Pr<span class="coord-tag">C4</span></div>
+        <div class="strip name">PROVERBIOS<span class="coord-tag">C4</span></div>
+      </div>
+      <div class="cell c-poetico" style="left:9cm;top:9cm">
+        <div class="strip chapters">12<span class="coord-tag">D4</span></div>
+        <div class="strip verses">222<span class="coord-tag">D4</span></div>
+        <div class="strip abbr">Ec<span class="coord-tag">D4</span></div>
+        <div class="strip name">ECLESIASTÉS<span class="coord-tag">D4</span></div>
+      </div>
+      <div class="cell c-poetico" style="left:12cm;top:9cm">
+        <div class="strip chapters">08<span class="coord-tag">E4</span></div>
+        <div class="strip verses">117<span class="coord-tag">E4</span></div>
+        <div class="strip abbr">Cnt<span class="coord-tag">E4</span></div>
+        <div class="strip name">CANTARES<span class="coord-tag">E4</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:15cm;top:9cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:18cm;top:9cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:21cm;top:9cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:24cm;top:9cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-paulina" style="left:27cm;top:9cm">
+        <div class="strip chapters">05<span class="coord-tag">J4</span></div>
+        <div class="strip verses">089<span class="coord-tag">J4</span></div>
+        <div class="strip abbr">1Ts<span class="coord-tag">J4</span></div>
+        <div class="strip name">1 TESALONICENSES<span class="coord-tag">J4</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:30cm;top:9cm">
+        <div class="strip chapters">03<span class="coord-tag">K4</span></div>
+        <div class="strip verses">047<span class="coord-tag">K4</span></div>
+        <div class="strip abbr">2Ts<span class="coord-tag">K4</span></div>
+        <div class="strip name">2 TESALONICENSES<span class="coord-tag">K4</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:33cm;top:9cm">
+        <div class="strip chapters">06<span class="coord-tag">L4</span></div>
+        <div class="strip verses">113<span class="coord-tag">L4</span></div>
+        <div class="strip abbr">1Ti<span class="coord-tag">L4</span></div>
+        <div class="strip name">1 TIMOTEO<span class="coord-tag">L4</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:36cm;top:9cm">
+        <div class="strip chapters">04<span class="coord-tag">M4</span></div>
+        <div class="strip verses">083<span class="coord-tag">M4</span></div>
+        <div class="strip abbr">2Ti<span class="coord-tag">M4</span></div>
+        <div class="strip name">2 TIMOTEO<span class="coord-tag">M4</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:39cm;top:9cm">
+        <div class="strip chapters">03<span class="coord-tag">N4</span></div>
+        <div class="strip verses">046<span class="coord-tag">N4</span></div>
+        <div class="strip abbr">Tit<span class="coord-tag">N4</span></div>
+        <div class="strip name">TITO<span class="coord-tag">N4</span></div>
+      </div>
+      <div class="cell c-paulina" style="left:42cm;top:9cm">
+        <div class="strip chapters">01<span class="coord-tag">O4</span></div>
+        <div class="strip verses">025<span class="coord-tag">O4</span></div>
+        <div class="strip abbr">Flm<span class="coord-tag">O4</span></div>
+        <div class="strip name">FILEMÓN<span class="coord-tag">O4</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:45cm;top:9cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+
+      <!-- Fila 5 -->
+      <div class="cell c-prof-mayor" style="left:0cm;top:12cm">
+        <div class="strip chapters">66<span class="coord-tag">A5</span></div>
+        <div class="strip verses">1292<span class="coord-tag">A5</span></div>
+        <div class="strip abbr">Is<span class="coord-tag">A5</span></div>
+        <div class="strip name">ISAÍAS<span class="coord-tag">A5</span></div>
+      </div>
+      <div class="cell c-prof-mayor" style="left:3cm;top:12cm">
+        <div class="strip chapters">52<span class="coord-tag">B5</span></div>
+        <div class="strip verses">1364<span class="coord-tag">B5</span></div>
+        <div class="strip abbr">Jer<span class="coord-tag">B5</span></div>
+        <div class="strip name">JEREMÍAS<span class="coord-tag">B5</span></div>
+      </div>
+      <div class="cell c-prof-mayor" style="left:6cm;top:12cm">
+        <div class="strip chapters">05<span class="coord-tag">C5</span></div>
+        <div class="strip verses">154<span class="coord-tag">C5</span></div>
+        <div class="strip abbr">Lm<span class="coord-tag">C5</span></div>
+        <div class="strip name">LAMENTACIONES<span class="coord-tag">C5</span></div>
+      </div>
+      <div class="cell c-prof-mayor" style="left:9cm;top:12cm">
+        <div class="strip chapters">48<span class="coord-tag">D5</span></div>
+        <div class="strip verses">1273<span class="coord-tag">D5</span></div>
+        <div class="strip abbr">Ez<span class="coord-tag">D5</span></div>
+        <div class="strip name">EZEQUIEL<span class="coord-tag">D5</span></div>
+      </div>
+      <div class="cell c-prof-mayor" style="left:12cm;top:12cm">
+        <div class="strip chapters">12<span class="coord-tag">E5</span></div>
+        <div class="strip verses">357<span class="coord-tag">E5</span></div>
+        <div class="strip abbr">Dn<span class="coord-tag">E5</span></div>
+        <div class="strip name">DANIEL<span class="coord-tag">E5</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:15cm;top:12cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:18cm;top:12cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-general" style="left:21cm;top:12cm">
+        <div class="strip chapters">13<span class="coord-tag">H5</span></div>
+        <div class="strip verses">303<span class="coord-tag">H5</span></div>
+        <div class="strip abbr">He<span class="coord-tag">H5</span></div>
+        <div class="strip name">HEBREOS<span class="coord-tag">H5</span></div>
+      </div>
+      <div class="cell c-general" style="left:24cm;top:12cm">
+        <div class="strip chapters">05<span class="coord-tag">I5</span></div>
+        <div class="strip verses">108<span class="coord-tag">I5</span></div>
+        <div class="strip abbr">Stg<span class="coord-tag">I5</span></div>
+        <div class="strip name">SANTIAGO<span class="coord-tag">I5</span></div>
+      </div>
+      <div class="cell c-general" style="left:27cm;top:12cm">
+        <div class="strip chapters">05<span class="coord-tag">J5</span></div>
+        <div class="strip verses">105<span class="coord-tag">J5</span></div>
+        <div class="strip abbr">1Pe<span class="coord-tag">J5</span></div>
+        <div class="strip name">1 PEDRO<span class="coord-tag">J5</span></div>
+      </div>
+      <div class="cell c-general" style="left:30cm;top:12cm">
+        <div class="strip chapters">03<span class="coord-tag">K5</span></div>
+        <div class="strip verses">061<span class="coord-tag">K5</span></div>
+        <div class="strip abbr">2Pe<span class="coord-tag">K5</span></div>
+        <div class="strip name">2 PEDRO<span class="coord-tag">K5</span></div>
+      </div>
+      <div class="cell c-general" style="left:33cm;top:12cm">
+        <div class="strip chapters">05<span class="coord-tag">L5</span></div>
+        <div class="strip verses">105<span class="coord-tag">L5</span></div>
+        <div class="strip abbr">1Jn<span class="coord-tag">L5</span></div>
+        <div class="strip name">1 JUAN<span class="coord-tag">L5</span></div>
+      </div>
+      <div class="cell c-general" style="left:36cm;top:12cm">
+        <div class="strip chapters">01<span class="coord-tag">M5</span></div>
+        <div class="strip verses">013<span class="coord-tag">M5</span></div>
+        <div class="strip abbr">2Jn<span class="coord-tag">M5</span></div>
+        <div class="strip name">2 JUAN<span class="coord-tag">M5</span></div>
+      </div>
+      <div class="cell c-general" style="left:39cm;top:12cm">
+        <div class="strip chapters">01<span class="coord-tag">N5</span></div>
+        <div class="strip verses">015<span class="coord-tag">N5</span></div>
+        <div class="strip abbr">3Jn<span class="coord-tag">N5</span></div>
+        <div class="strip name">3 JUAN<span class="coord-tag">N5</span></div>
+      </div>
+      <div class="cell c-general" style="left:42cm;top:12cm">
+        <div class="strip chapters">01<span class="coord-tag">O5</span></div>
+        <div class="strip verses">025<span class="coord-tag">O5</span></div>
+        <div class="strip abbr">Jud<span class="coord-tag">O5</span></div>
+        <div class="strip name">JUDAS<span class="coord-tag">O5</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:45cm;top:12cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+
+      <!-- Fila 6 -->
+      <div class="cell c-prof-menor" style="left:0cm;top:15cm">
+        <div class="strip chapters">14<span class="coord-tag">A6</span></div>
+        <div class="strip verses">197<span class="coord-tag">A6</span></div>
+        <div class="strip abbr">Os<span class="coord-tag">A6</span></div>
+        <div class="strip name">OSEAS<span class="coord-tag">A6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:3cm;top:15cm">
+        <div class="strip chapters">03<span class="coord-tag">B6</span></div>
+        <div class="strip verses">073<span class="coord-tag">B6</span></div>
+        <div class="strip abbr">Jl<span class="coord-tag">B6</span></div>
+        <div class="strip name">JOEL<span class="coord-tag">B6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:6cm;top:15cm">
+        <div class="strip chapters">09<span class="coord-tag">C6</span></div>
+        <div class="strip verses">146<span class="coord-tag">C6</span></div>
+        <div class="strip abbr">Am<span class="coord-tag">C6</span></div>
+        <div class="strip name">AMÓS<span class="coord-tag">C6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:9cm;top:15cm">
+        <div class="strip chapters">01<span class="coord-tag">D6</span></div>
+        <div class="strip verses">021<span class="coord-tag">D6</span></div>
+        <div class="strip abbr">Abd<span class="coord-tag">D6</span></div>
+        <div class="strip name">ABDÍAS<span class="coord-tag">D6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:12cm;top:15cm">
+        <div class="strip chapters">04<span class="coord-tag">E6</span></div>
+        <div class="strip verses">048<span class="coord-tag">E6</span></div>
+        <div class="strip abbr">Jon<span class="coord-tag">E6</span></div>
+        <div class="strip name">JONÁS<span class="coord-tag">E6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:15cm;top:15cm">
+        <div class="strip chapters">07<span class="coord-tag">F6</span></div>
+        <div class="strip verses">105<span class="coord-tag">F6</span></div>
+        <div class="strip abbr">Mi<span class="coord-tag">F6</span></div>
+        <div class="strip name">MIQUEAS<span class="coord-tag">F6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:18cm;top:15cm">
+        <div class="strip chapters">03<span class="coord-tag">G6</span></div>
+        <div class="strip verses">056<span class="coord-tag">G6</span></div>
+        <div class="strip abbr">Nah<span class="coord-tag">G6</span></div>
+        <div class="strip name">NAHÚM<span class="coord-tag">G6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:21cm;top:15cm">
+        <div class="strip chapters">03<span class="coord-tag">H6</span></div>
+        <div class="strip verses">056<span class="coord-tag">H6</span></div>
+        <div class="strip abbr">Hab<span class="coord-tag">H6</span></div>
+        <div class="strip name">HABACUC<span class="coord-tag">H6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:24cm;top:15cm">
+        <div class="strip chapters">03<span class="coord-tag">I6</span></div>
+        <div class="strip verses">053<span class="coord-tag">I6</span></div>
+        <div class="strip abbr">Sof<span class="coord-tag">I6</span></div>
+        <div class="strip name">SOFONÍAS<span class="coord-tag">I6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:27cm;top:15cm">
+        <div class="strip chapters">02<span class="coord-tag">J6</span></div>
+        <div class="strip verses">038<span class="coord-tag">J6</span></div>
+        <div class="strip abbr">Hag<span class="coord-tag">J6</span></div>
+        <div class="strip name">HAGEO<span class="coord-tag">J6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:30cm;top:15cm">
+        <div class="strip chapters">14<span class="coord-tag">K6</span></div>
+        <div class="strip verses">211<span class="coord-tag">K6</span></div>
+        <div class="strip abbr">Zac<span class="coord-tag">K6</span></div>
+        <div class="strip name">ZACARÍAS<span class="coord-tag">K6</span></div>
+      </div>
+      <div class="cell c-prof-menor" style="left:33cm;top:15cm">
+        <div class="strip chapters">04<span class="coord-tag">L6</span></div>
+        <div class="strip verses">055<span class="coord-tag">L6</span></div>
+        <div class="strip abbr">Mal<span class="coord-tag">L6</span></div>
+        <div class="strip name">MALAQUÍAS<span class="coord-tag">L6</span></div>
+      </div>
+      <div class="cell empty-cell" style="left:36cm;top:15cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:39cm;top:15cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell empty-cell" style="left:42cm;top:15cm">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+      </div>
+      <div class="cell c-profecia" style="left:45cm;top:15cm">
+        <div class="strip chapters">22<span class="coord-tag">P6</span></div>
+        <div class="strip verses">404<span class="coord-tag">P6</span></div>
+        <div class="strip abbr">Ap<span class="coord-tag">P6</span></div>
+        <div class="strip name">APOCALIPSIS<span class="coord-tag">P6</span></div>
+      </div>
+    </div>
+
+    <!-- Labels de coordenadas del tablero -->
+    <div class="grid-lines">
+      <!-- Column labels bottom -->
+      <div class="col-label" style="left:0cm">A</div>
+      <div class="col-label" style="left:3cm">B</div>
+      <div class="col-label" style="left:6cm">C</div>
+      <div class="col-label" style="left:9cm">D</div>
+      <div class="col-label" style="left:12cm">E</div>
+      <div class="col-label" style="left:15cm">F</div>
+      <div class="col-label" style="left:18cm">G</div>
+      <div class="col-label" style="left:21cm">H</div>
+      <div class="col-label" style="left:24cm">I</div>
+      <div class="col-label" style="left:27cm">J</div>
+      <div class="col-label" style="left:30cm">K</div>
+      <div class="col-label" style="left:33cm">L</div>
+      <div class="col-label" style="left:36cm">M</div>
+      <div class="col-label" style="left:39cm">N</div>
+      <div class="col-label" style="left:42cm">O</div>
+      <div class="col-label" style="left:45cm">P</div>
+      <!-- Row labels left -->
+      <div class="row-label" style="top:0cm">1</div>
+      <div class="row-label" style="top:3cm">2</div>
+      <div class="row-label" style="top:6cm">3</div>
+      <div class="row-label" style="top:9cm">4</div>
+      <div class="row-label" style="top:12cm">5</div>
+      <div class="row-label" style="top:15cm">6</div>
+    </div>
+
+    <!-- NUEVO PANEL INFERIOR: 39 y 27 libros + estadísticas -->
+    <!-- <div class="info-panel">
+      <div class="canon-box">
+        <div class="canon-number">39</div>
+        <div class="canon-label">LIBROS</div>
+        <div class="canon-desc">Antiguo Testamento</div>
+      </div>
+      <div class="canon-box">
+        <div class="canon-number">27</div>
+        <div class="canon-label">LIBROS</div>
+        <div class="canon-desc">Nuevo Testamento</div>
+      </div>
+      <div class="stats-box">
+        <div class="stat-item">
+          <div class="stat-number">66</div>
+          <div class="stat-label">Total Libros</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1,189</div>
+          <div class="stat-label">Capítulos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">31,102</div>
+          <div class="stat-label">Versículos</div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ============ PANEL INFERIOR INFORMATIVO (NO SE DIVIDE EN TIRAS) ============ -->
+<!-- ============ PANEL INFERIOR INFORMATIVO ============ -->
+<!-- ============ PANEL INFERIOR INFORMATIVO ============ -->
+<div class="info-panel">
+
+    <!-- Elemento tipo tabla periódica de ejemplo (CUADRO GRIS) -->
+    <div class="sample-element">
+        <div class="sample-top">Capítulos<br>Versículos</div>
+        <div class="sample-mid">Abr</div>
+        <div class="sample-bot">Libro</div>
+    </div>
+
+    <!-- CONTENEDOR DE LOS DOS CUADROS (39 y 27) UNO DEBAJO DEL OTRO -->
+    <div style="display: flex; flex-direction: column; gap: 8px; justify-content: center; padding: 5px 10px;">
+        
+        <!-- CUADRO 39 LIBROS -->
+        <div style="background: linear-gradient(145deg, #0a2f6c, #061e44); border: 2px solid #ffd700; border-radius: 12px; padding: 8px 20px; text-align: center; min-width: 100px;">
+            <div style="font-size: 36pt; font-weight: bold; color: #ffd700; line-height: 1;">39</div>
+            <div style="font-size: 12pt; font-weight: bold; color: #ffd700; letter-spacing: 2px;">LIBROS</div>
+        </div>
+
+        <!-- CUADRO 27 LIBROS -->
+        <div style="background: linear-gradient(145deg, #8b1a1a, #5c0e0e); border: 2px solid #ffd700; border-radius: 12px; padding: 8px 20px; text-align: center; min-width: 100px;">
+            <div style="font-size: 36pt; font-weight: bold; color: #ffd700; line-height: 1;">27</div>
+            <div style="font-size: 12pt; font-weight: bold; color: #ffd700; letter-spacing: 2px;">LIBROS</div>
+        </div>
+
+    </div>
+
+    <!-- CONTENEDOR DE ESTADÍSTICAS Y DATOS INTERESANTES EN 2 COLUMNAS -->
+<div style="display: flex; flex: 2; gap: 10px; padding: 5px;">
+
+    <!-- COLUMNA IZQUIERDA: COMPOSICIÓN -->
+    <div style="flex: 1; display: flex; flex-direction: column;">
+        <div style="font-size: 10pt; font-weight: bold; color: #ffd700; text-align: center; margin-bottom: 5px;">📊 COMPOSICIÓN</div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px;padding-top: 25px;">
+            <!-- Fila 1 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Testamentos</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">2</span>
+                </div>
+            </div>
+
+            <!-- Fila 2 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Libros</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">66</span>
+                </div>
+            </div>
+
+            <!-- Fila 3 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Capítulos</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">1,189</span>
+                </div>
+            </div>
+
+            <!-- Fila 4 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Capítulos A.T.</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">929</span>
+                </div>
+            </div>
+
+            <!-- Fila 5 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Capítulos N.T.</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">260</span>
+                </div>
+            </div>
+
+            <!-- Fila 6 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Versículos (RV 1960)</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">31,102</span>
+                </div>
+            </div>
+
+            <!-- Fila 7 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Palabras (RV 1960)</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">773,393</span>
+                </div>
+            </div>
+
+            <!-- Fila 8 -->
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #1a3a5c; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Letras (RV 1960)</span>
+                </div>
+                <div style="width: 2.5cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700; font-weight: bold;">3,566,480</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: DATOS INTERESANTES -->
+    <div style="flex: 1; display: flex; flex-direction: column;">
+        <div style="font-size: 10pt; font-weight: bold; color: #ffd700; text-align: center; margin-bottom: 5px;">⭐ DATOS INTERESANTES</div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px; padding-top: 25px;">
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Versículo más largo</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">Ester 8:9</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Versículo más corto</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">Éxodo 20:13</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Capítulo más largo</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">Salmo 119</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Capítulo más corto</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">Salmo 117</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">Verso central</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">Salmo 118:8</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 14pt; color: #e0e0e0;">"Señor" se repite</span>
+                </div>
+                <div style="width: 3cm; height: 0.9cm; background: #ffd70033; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 14pt; color: #ffd700;">1,855 veces</span>
+                </div>
+            </div>
+
+            <!-- Salmo 14 y 53 ocupan toda la fila -->
+            <div style="grid-column: span 2;">
+                <div style="width: 6cm; height: 0.9cm; background: #4a2a2a; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;">
+                    <span style="font-size: 12pt; color: #ffd700; font-weight: bold;"> Salmo 14 y 53 son iguales</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+    
+
+    <div class="assembly-note">
+      CADA CUADRO SE CORTA EN 4 TIRAS HORIZONTALES (0.75 cm c/u) — LAS LÍNEAS PUNTEADAS SON GUÍAS DE CORTE —
+      COORDENADAS EN ESQUINA DE CADA TIRA PARA ENSAMBLAJE
+    </div>
+  </div>
+
+</body>
+
+</html>
